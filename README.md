@@ -1,1 +1,2 @@
-# Android-Jarvis
+# JARVIS Android
+A native Android personal AI assistant project.
