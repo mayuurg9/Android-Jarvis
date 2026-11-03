@@ -10,7 +10,7 @@ class OpenRouterAgent(private val tools: AgentTools) {
         if (apiKey.isBlank()) return "Add your OpenRouter API key in SETUP first."
         repeat(4) {
             val response = request(apiKey, model, history)
-            val message = response.getJSONObject("choices").getJSONObject(0).getJSONObject("message")
+            val message = response.getJSONArray("choices").getJSONObject(0).getJSONObject("message")
             val calls = message.optJSONArray("tool_calls")
             if (calls == null || calls.length() == 0) {
                 val answer = message.optString("content", "The model returned an empty response.")

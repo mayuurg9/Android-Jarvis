@@ -1,4 +1,0 @@
-<resources>
-    <string name="app_name">JARVIS</string>
-    <string name="accessibility_description">Allows JARVIS to read text exposed by the active screen when you explicitly enable this service.</string>
-</resources>
